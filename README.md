@@ -88,3 +88,57 @@ Las siguientes acciones se realizan de forma permanente.
   b. Comprobar mensajes recibidos sobre los tópicos subscritos en el servidor.
   
 4. En el caso de recibir mensajes desde el servidor, ejecuta la función messageArrived() que actualiza los datos de respectivos sensores para volver a enviar al servidor MQTT.
+
+### Ejemplo fichero JSON
+
+```json
+{
+  "server": "192.168.1.97",
+  "port": 1883,
+  "user": "usuario",
+  "pass": "password",
+  "configSensors": [
+    {
+      "sensor": "windspeed",
+      "pin": 9,
+      "topic": "/remotushardware/meteo/windspeed"
+    },
+    {
+      "sensor": "winddirection",
+      "pin": 19,
+      "topic": "/remotushardware/meteo/winddirection"
+    },
+    {
+      "sensor": "raingauge",
+      "pin": 10,
+      "topic": "/remotushardware/meteo/raingauge"
+    },
+    {
+      "sensor": "temperature",
+      "pin": 15,
+      "topic": "/remotushardware/air/temperature"
+    },
+    {
+      "sensor": "humidity",
+      "pin": 15,
+      "topic": "/remotushardware/air/humidity"
+    },
+    {
+      "sensor": "soilHumidity",
+      "pin": 16,
+      "topic": "/remotushardware/soil/humidity"
+    }
+  ]
+}
+```
+
+## Código de errores
+
++ Fichero -> 0001
++ Sintaxis JSON -> 0010
++ Datos servidor -> 0011
++ Configuración sensor -> 0100
++ Conexión servidor -> 1111
++ Error del sistemas -> 1001 <-> 0110
+
+Donde 0000 a 1111 son los leds que proporciona el microcontrolador en su aprte baja
