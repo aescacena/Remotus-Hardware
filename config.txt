@@ -1,0 +1,38 @@
+{
+  "server": "192.168.1.97",
+  "port": 1883,
+  "user": "usuario",
+  "pass": "password",
+  "configSensors": [
+    {
+      "sensor": "windspeed",
+      "pin": 9,
+      "topic": "/remotushardware/meteo/windspeed"
+    },
+    {
+      "sensor": "winddirection",
+      "pin": 19,
+      "topic": "/remotushardware/meteo/winddirection"
+    },
+    {
+      "sensor": "raingauge",
+      "pin": 10,
+      "topic": "/remotushardware/meteo/raingauge"
+    },
+    {
+      "sensor": "temperature",
+      "pin": 15,
+      "topic": "/remotushardware/air/temperature"
+    },
+    {
+      "sensor": "humidity",
+      "pin": 15,
+      "topic": "/remotushardware/air/humidity"
+    },
+    {
+      "sensor": "soilHumidity",
+      "pin": 16,
+      "topic": "/remotushardware/soil/humidity"
+    }
+  ]
+}
