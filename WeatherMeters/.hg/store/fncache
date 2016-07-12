@@ -1,0 +1,9 @@
+data/Anemometer.cpp.i
+data/DebouncedFallingEdgeCounter.h.i
+data/WindVane.cpp.i
+data/WeatherMeters.cpp.i
+data/DebouncedFallingEdgeCounter.cpp.i
+data/RainGauge.h.i
+data/Anemometer.h.i
+data/WeatherMeters.h.i
+data/WindVane.h.i

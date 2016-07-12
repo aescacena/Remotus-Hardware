@@ -1,0 +1,8 @@
+Esta versión guarda la información de la configuración de sensores en 3 listas.
+ - Tipo objetos
+ - Objeto
+ - Tópico
+
+Ademas añado la lectura y configuración sensor sonar, led remoto ademas de poder asignar salidas analógicas para darle uso por ejemplo de variación de luz.
+
+ #Funciona sonar
