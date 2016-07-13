@@ -12,6 +12,10 @@ marcadas y enviarán la respectiva información hacia el servidor MQTT.
 + Servidor MQTT: Es el encargado de gestionar la red y transmitir los mensajes entre usuarios, sistema embedido y sensores, para la 
 iteracción entre estos. 
 
+![Situación](/images/Ejemplo_funcional.png)
+
+Como podemos ver en la figura anterior, la aplicación MQTT puede ser accedida por varios usuarios a la vez desde sus estaciones de trabajo, tablets, portátiles, móviles, etc.
+
 Los diferentes sensores que pueda haber instalados se comunican directamente con la placa mbed NXP LPC1768 y esta a su vez se 
 comunica con el servidor MQTT para publicar en los tópicos correspondientes la información proporcionada por lo sensores. Los 
 sensores se diferenciarán en el servidor por el tópico en él que se publica su información, para que luego el servidor MQTT se 
@@ -134,11 +138,24 @@ Las siguientes acciones se realizan de forma permanente.
 
 ## Código de errores
 
-+ Fichero -> 0001
 + Sintaxis JSON -> 0010
+
+    ![Error fichero](/images/Error_2.jpg)
 + Datos servidor -> 0011
+
+    ![Error servidor](/images/Error_3.jpg)
 + Configuración sensor -> 0100
+
+    ![Error sensor](/images/Error_4.jpg)
 + Conexión servidor -> 1111
+
+    ![Error fichero](/images/Error_16.jpg)
 + Error del sistemas -> 1001 <-> 0110
 
+    ![Error sistema](/images/Error_1.jpg)
+
 Donde 0000 a 1111 son los leds que proporciona el microcontrolador en su aprte baja
+
+## Circuito ejemplo
+
+  ![Circuito](/images/Connection_Fritzing.jpg)
